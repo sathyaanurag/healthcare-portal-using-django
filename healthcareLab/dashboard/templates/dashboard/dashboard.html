@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+        <title>Home</title>
+        <!-- BOOTSTRAP CORE STYLE  -->
+        <link href="/static/css/bootstrap.css" rel="stylesheet" />
+        <!-- FONT AWESOME STYLE  -->
+        <link href="/static/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLE  -->
+        <link href="/static/css/style.css" rel="stylesheet" />
+        <!-- GOOGLE FONT -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+    </head>
+    <body>
+        <div class="navbar navbar-inverse set-radius-zero" >
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+
+                        <img height="70" src="/static/img/logo.png" />
+                    </a>
+
+                </div>
+
+
+
+                <div class="right-div">
+                    <!--Welcome, {{ username }}! &nbsp;&nbsp;&nbsp;-->
+                    {{message}}
+                    {{username}}
+                    {{message2}}&nbsp;&nbsp;&nbsp;
+
+                    <a href="/index/" class="btn btn-primary pull-right">LOG OUT</a>
+                </div>
+            </div>
+        </div>
+        <!-- LOGO HEADER END-->
+        <section class="menu-section">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-12">
+                        <div class="navbar-collapse collapse ">
+                            <ul id="menu-top" class="nav navbar-nav navbar-right">
+                                <li><a href="/dashboard/" class="menu-top-active">DASHBOARD</a></li>
+
+                                <li>
+                                    <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown">Sample Management <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="/sample/new/">Register New Sample</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="/sample/search/">Search for Sample Info</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="/sample/edit/">Edit Sample Info</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown">Test Management <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="/test/schedule/">Schedule a New Test</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="/test/search">Search for Test Results</a></li>
+                                    </ul>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- MENU SECTION END-->
+
+
+        <div class="content-wrapper">
+
+        <div class="container">
+            <div class="row pad-botm">
+                <div class="col-md-12">
+                    <h4 class="header-line">ADMIN DASHBOARD</h4>
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <div id="carousel-example" class="carousel slide slide-bdr" data-ride="carousel" >
+
+                        <div class="carousel-inner">
+                            <div class="item active">
+
+                                <img src="/static/img/healthcare-digital.jpg" alt="" />
+
+                            </div>
+                            <div class="item">
+                                <img src="/static/img/healthcare-staff.jpg" alt="" />
+
+                            </div>
+                            <div class="item">
+                                <img src="/static/img/heathcare-automation.jpg" alt="" />
+
+                            </div>
+                        </div>
+                        <!--INDICATORS-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example" data-slide-to="1"></li>
+                            <li data-target="#carousel-example" data-slide-to="2"></li>
+                        </ol>
+                        <!--PREVIUS-NEXT BUTTONS-->
+                        <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            News
+                        </div>
+                        <div class="panel-body">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#home" data-toggle="tab">Today</a>
+                                </li>
+                                <li class=""><a href="#profile" data-toggle="tab">Week</a>
+                                </li>
+                                <li class=""><a href="#messages" data-toggle="tab">Month</a>
+                                </li>
+
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade active in" id="home">
+
+                                    <p>For more than a decade, healthcare spending in the U.S. has been rising at a rate far exceeding inflation. Annual spending in 2014 was $3 trillion, or more than 17.5% of the national GDP, far exceeding that of any other developed country.
+                                    Being a leading global healthcare company, we at Healthcare Lab are continuously developing our portfolio, from medical imaging and laboratory diagnostics, to adding managed services, consulting, and healthcare IT services – as well as further technologies for therapeutic and molecular diagnostics.</p>
+                                </div>
+                                <div class="tab-pane fade" id="profile">
+
+                                    <p>Healthcare Lab offers advanced laboratory diagnostic testing and convenient testing locations. We also provide more efficient ways to assist, monitor and manage a lab.
+                                    By connecting different healthcare providers and even patients, the eHealth solution helps make good care available.
+                                    Built for sharing and collaboration, the eHealth
+                                        solution helps create effective communication, standardize quality, and synchronize care across sectors: to improve quality, avoid unnecessary examinations, and save resources and cost.</p>
+                                </div>
+                                <div class="tab-pane fade" id="messages">
+
+                                    <p>American Fork Hospital Named One of the Nation’s 100 Top Hospitals. </p>
+                                    <p>Business is challenging right now': How Intermountain's CEO looks to bend the healthcare cost curve.</p>
+                                    <p>Intermountain Primary Children’s Hospital, Intermountain Medical Center, and Physician Partners at University of Utah School of Medicine Receive Prestigious Eisenberg Award.</p>
+                                    <p>New Video Works As A Tool To Combat The Opioid Epidemic.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+
+
+
+
+
+            <div class="row">
+
+
+
+
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            Referral Links
+                        </div>
+                        <div class="panel-body">
+                            <p>Visit <a href="http://healthcare1.us-east-1.elasticbeanstalk.com/patient/login/">Lifestyle Health</a></p>
+                            <p>For questions and suggestions please call us (801)573-2857.</p>
+                        </div>
+                        <div class="panel-footer">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Alerts
+                        </div>
+                        <div class="panel-body">
+
+                            <div class="alert alert-info">
+                                Lab closed at 3:00pm during next week. 
+                            </div>
+
+
+                            <div class="alert alert-success alert-dismissable">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                 We have supported the development and publication of an easy-to-use, downloadable app. Feel free to download.
+                            </div>
+
+                            <hr />
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="#"> BPA Healthcare 3</a></div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- FOOTER SECTION END-->
+
+
+
+
+
+        <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+        <!-- CORE JQUERY  -->
+        <script src="/static/js/jquery-1.10.2.js"></script>
+        <!-- BOOTSTRAP SCRIPTS  -->
+        <script src="/static/js/bootstrap.js"></script>
+
+
+    </body>
+</html>
